@@ -23,14 +23,15 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['**/*.js'],
+        files: ['test/*.js'],
         tasks: ['jshint'],
         options: {
           spawn: false,
         },
       },
     }
-  })
+  });
+
 
   grunt.loadNpmTasks('grunt-mocha-casperjs');
   grunt.loadNpmTasks('grunt-contrib-jshint');
