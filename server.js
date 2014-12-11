@@ -5,7 +5,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
-  response.render('greeting', { name: null });
+  response.render('greeting');
 });
 
 server.listen(3000, function() {
